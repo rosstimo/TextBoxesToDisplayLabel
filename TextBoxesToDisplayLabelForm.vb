@@ -9,27 +9,27 @@
 
         If AccumulateMessage("", False) <> "" Then 'TODO ugly, fix?
             AlertUser(AccumulateMessage("", False))
+        Else
+            Display()
         End If
-
-        'CreateEmail() 'Don't generate if alert user
-        Display()
 
     End Sub
 
     Sub ValidateTextBoxes()
-
+        Dim problem As Boolean = False
         If LastNameTextBox.Text = "" Then
             AccumulateMessage("Last Name is a required field", False)
             LastNameTextBox.Focus()
+            problem = True
         End If
 
         If FirstNameTextBox.Text = "" Then
             AccumulateMessage("First Name is a required field", False)
             FirstNameTextBox.Focus()
+            problem = True
         End If
 
-
-        If EmailTextBox.Text = "" Then
+        If EmailTextBox.Text = "" And Not problem Then
             CreateEmail()
         End If
 
@@ -45,7 +45,7 @@
 
         If Clear Then
             message = ""
-        Else
+        ElseIf newMessage <> "" Then
             message &= newMessage & vbNewLine
         End If
 

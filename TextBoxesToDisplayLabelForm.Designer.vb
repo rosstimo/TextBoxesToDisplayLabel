@@ -32,37 +32,44 @@ Partial Class TextBoxesToDisplayLabelForm
         '
         'FirstNameTextBox
         '
-        Me.FirstNameTextBox.Location = New System.Drawing.Point(42, 45)
+        Me.FirstNameTextBox.Location = New System.Drawing.Point(28, 29)
+        Me.FirstNameTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.FirstNameTextBox.Name = "FirstNameTextBox"
-        Me.FirstNameTextBox.Size = New System.Drawing.Size(323, 26)
+        Me.FirstNameTextBox.Size = New System.Drawing.Size(217, 20)
         Me.FirstNameTextBox.TabIndex = 0
+        Me.FirstNameTextBox.Text = "Tim"
         '
         'LastNameTextBox
         '
-        Me.LastNameTextBox.Location = New System.Drawing.Point(42, 77)
+        Me.LastNameTextBox.Location = New System.Drawing.Point(28, 50)
+        Me.LastNameTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.LastNameTextBox.Name = "LastNameTextBox"
-        Me.LastNameTextBox.Size = New System.Drawing.Size(323, 26)
+        Me.LastNameTextBox.Size = New System.Drawing.Size(217, 20)
         Me.LastNameTextBox.TabIndex = 1
+        Me.LastNameTextBox.Text = "Rossiter"
         '
         'EmailTextBox
         '
-        Me.EmailTextBox.Location = New System.Drawing.Point(42, 109)
+        Me.EmailTextBox.Location = New System.Drawing.Point(28, 71)
+        Me.EmailTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.EmailTextBox.Name = "EmailTextBox"
-        Me.EmailTextBox.Size = New System.Drawing.Size(323, 26)
+        Me.EmailTextBox.Size = New System.Drawing.Size(217, 20)
         Me.EmailTextBox.TabIndex = 2
         '
         'DisplayLabel
         '
-        Me.DisplayLabel.Location = New System.Drawing.Point(382, 45)
+        Me.DisplayLabel.Location = New System.Drawing.Point(255, 29)
+        Me.DisplayLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.DisplayLabel.Name = "DisplayLabel"
-        Me.DisplayLabel.Size = New System.Drawing.Size(216, 227)
+        Me.DisplayLabel.Size = New System.Drawing.Size(144, 148)
         Me.DisplayLabel.TabIndex = 3
         '
         'DisplayButton
         '
-        Me.DisplayButton.Location = New System.Drawing.Point(42, 163)
+        Me.DisplayButton.Location = New System.Drawing.Point(28, 106)
+        Me.DisplayButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DisplayButton.Name = "DisplayButton"
-        Me.DisplayButton.Size = New System.Drawing.Size(151, 109)
+        Me.DisplayButton.Size = New System.Drawing.Size(101, 71)
         Me.DisplayButton.TabIndex = 4
         Me.DisplayButton.Text = "&Display"
         Me.DisplayButton.UseVisualStyleBackColor = True
@@ -70,9 +77,10 @@ Partial Class TextBoxesToDisplayLabelForm
         'ExitButton
         '
         Me.ExitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.ExitButton.Location = New System.Drawing.Point(214, 163)
+        Me.ExitButton.Location = New System.Drawing.Point(143, 106)
+        Me.ExitButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ExitButton.Name = "ExitButton"
-        Me.ExitButton.Size = New System.Drawing.Size(151, 109)
+        Me.ExitButton.Size = New System.Drawing.Size(101, 71)
         Me.ExitButton.TabIndex = 5
         Me.ExitButton.Text = "E&xit"
         Me.ExitButton.UseVisualStyleBackColor = True
@@ -80,16 +88,17 @@ Partial Class TextBoxesToDisplayLabelForm
         'TextBoxesToDisplayLabelForm
         '
         Me.AcceptButton = Me.DisplayButton
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.ExitButton
-        Me.ClientSize = New System.Drawing.Size(624, 293)
+        Me.ClientSize = New System.Drawing.Size(416, 190)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.DisplayButton)
         Me.Controls.Add(Me.DisplayLabel)
         Me.Controls.Add(Me.EmailTextBox)
         Me.Controls.Add(Me.LastNameTextBox)
         Me.Controls.Add(Me.FirstNameTextBox)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "TextBoxesToDisplayLabelForm"
         Me.Text = "Display Email"
         Me.ResumeLayout(False)
